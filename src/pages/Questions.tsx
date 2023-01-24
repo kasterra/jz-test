@@ -12,7 +12,7 @@ const Questions = () => {
     if (curPage === 7) {
       navigate("/result");
     }
-  }, [curPage]);
+  }, [curPage, navigate]);
   return (
     <Slider>
       <Slides curPage={curPage}>
