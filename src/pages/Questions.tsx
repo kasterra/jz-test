@@ -8,6 +8,7 @@ const Questions = () => {
   const [curPage, setCurPage] = useState(0);
   const [answerList, setAnswerList] = useState<number[]>([]);
   const navigate = useNavigate();
+  console.log(answerList);
   useEffect(() => {
     if (curPage === 7) {
       navigate("/result");
