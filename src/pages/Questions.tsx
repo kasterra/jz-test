@@ -15,7 +15,7 @@ const Questions = () => {
             <Heading>{element.question}</Heading>
             <Buttons>
               {element.answers.map((answer, answerIdx) => (
-                <Button
+                <AnswerButton
                   colorScheme="teal"
                   size="md"
                   onClick={() => {
@@ -27,8 +27,8 @@ const Questions = () => {
                     setCurPage((prev) => prev + 1);
                   }}
                 >
-                  {answer}
-                </Button>
+                  <span>{answer}</span>
+                </AnswerButton>
               ))}
             </Buttons>
           </Slide>
@@ -68,4 +68,12 @@ const Buttons = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 10px;
+`;
+
+const AnswerButton = styled(Button)`
+  padding: 30px;
+  span {
+    width: 300px;
+    white-space: normal;
+  }
 `;
