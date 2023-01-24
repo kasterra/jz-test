@@ -1,12 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import questionList from "../question";
 import { Button, Heading } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 const Questions = () => {
   const [curPage, setCurPage] = useState(0);
   const [answerList, setAnswerList] = useState<number[]>([]);
-  console.log(answerList);
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (curPage === 7) {
+      navigate("/result");
+    }
+  }, [curPage]);
   return (
     <Slider>
       <Slides curPage={curPage}>
