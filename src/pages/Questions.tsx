@@ -73,7 +73,8 @@ const Buttons = styled.div`
 const AnswerButton = styled(Button)`
   padding: 30px;
   span {
-    width: 300px;
+    max-width: 90vw;
     white-space: normal;
+    word-wrap: break-word;
   }
 `;
