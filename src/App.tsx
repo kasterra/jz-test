@@ -1,9 +1,19 @@
 import Routes from "./pages/Routes";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+
+const theme = extendTheme({
+  styles: {
+    global: {
+      "*": {
+        wordBreak: "keep-all",
+      },
+    },
+  },
+});
 
 const App = () => {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <Routes />
     </ChakraProvider>
   );
