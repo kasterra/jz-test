@@ -19,7 +19,7 @@ const Questions = () => {
       <Slides curPage={curPage}>
         {questionList.map((element, questionIdx) => (
           <Slide>
-            <Heading>{element.question}</Heading>
+            <Heading textAlign={"center"}>{element.question}</Heading>
             <Buttons>
               {element.answers.map((answer, answerIdx) => (
                 <AnswerButton
