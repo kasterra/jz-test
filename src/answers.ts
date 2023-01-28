@@ -3,6 +3,7 @@ type answerType = {
   answersList: (0 | 1)[];
   whatWeDo: string[];
   whenWeMeet: string[];
+  whereWeMeet: string[];
   whatWeWant: string[];
   tel: string;
   imageURL?: string;
@@ -19,7 +20,8 @@ export const answers: answerType[] = [
       "각종 행사 포스터 디자인",
       "매주 예배광고 PPT",
     ],
-    whenWeMeet: ["매주 토요일 오후 2시 (교육관 401호)"],
+    whenWeMeet: ["매주 토요일 오후 2시"],
+    whereWeMeet: ["교육관 401호"],
     whatWeWant: [
       "디자인 : Ai, Photoshop 등...",
       "문서작업 : 한글, 엑셀 능력 등 우대",
@@ -32,10 +34,11 @@ export const answers: answerType[] = [
     answersList: [0, 1, 0, 0, 1, 0, 1],
     whatWeDo: ["야베스의 모든 찬양"],
     whenWeMeet: [
-      "매주 금요일 오후 6시 (7층 제자홀)",
-      "매주 토요일 오전 11시 (B1 사랑홀)",
-      "매주 주일 오후 4시 (B1 밴드연습실)",
+      "매주 금요일 오후 6시",
+      "매주 토요일 오전 11시",
+      "매주 주일 오후 4시",
     ],
+    whereWeMeet: ["7층 제자홀", "B1 사랑홀", "B1 밴드연습실"],
     whatWeWant: [
       "노래에 대한 은사",
       "악기에 대한 은사",
@@ -57,7 +60,8 @@ export const answers: answerType[] = [
       "(조)금 에너지가 필요해요🔋",
       "(국) 원끼리 사랑이 넘쳐요💓",
     ],
-    whenWeMeet: ["매주 토요일 오후 2시 -교육관 117호"],
+    whenWeMeet: ["매주 토요일 오후 2시"],
+    whereWeMeet: ["교육관 117호"],
     whatWeWant: ["적당한 텐션", "나름의 재치", "웃는 얼굴"],
     tel: "010-2542-3717",
     lastWord: "저희와 함께 새가족을 섬길분을 진심으로 기다립니다🤗",

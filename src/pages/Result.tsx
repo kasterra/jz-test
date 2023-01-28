@@ -14,8 +14,13 @@ import {
   List,
   ListItem,
 } from "@chakra-ui/react";
+import { useSearchParams } from "react-router-dom";
+import { answers } from "../answers";
 
 const Result = () => {
+  const [idx] = useSearchParams();
+  const answer = answers[Number(idx.get("idx")) || 0];
+  console.log(answer, idx.get("idx"));
   return (
     <Container maxW={"7xl"}>
       <SimpleGrid
@@ -50,7 +55,7 @@ const Result = () => {
               fontWeight={600}
               fontSize={{ base: "2xl", sm: "4xl", lg: "5xl" }}
             >
-              문서출판국
+              {answer.name}
             </Heading>
           </Box>
 
@@ -65,13 +70,15 @@ const Result = () => {
           >
             <VStack spacing={{ base: 4, sm: 6 }}>
               <Text fontSize={"2xl"} fontWeight={"300"}>
-                문서출판국은 이런 일을 해요
+                {answer.name}은 이런 일을 해요
               </Text>
-              <Text fontSize={"lg"}>주보 디자인 및 인쇄</Text>
-              <Text fontSize={"lg"}>수련회 책자 작업</Text>
-              <Text fontSize={"lg"}>각종 행사 포스터 디자인</Text>
-              <Text fontSize={"lg"}>매주 예배 광고 ppt</Text>
             </VStack>
+            <Stack>
+              {answer.whatWeDo.map((value) => (
+                <Text fontSize={"lg"}>{value}</Text>
+              ))}
+            </Stack>
+
             <Box>
               <Text
                 fontSize={{ base: "16px", lg: "18px" }}
@@ -84,18 +91,24 @@ const Result = () => {
               </Text>
 
               <List spacing={2}>
-                <ListItem>
-                  <Text as={"span"} fontWeight={"bold"}>
-                    모이는 날짜:
-                  </Text>{" "}
-                  매주 토요일 오후 2시
-                </ListItem>
-                <ListItem>
-                  <Text as={"span"} fontWeight={"bold"}>
-                    모이는 장소:
-                  </Text>{" "}
-                  교육관 401호
-                </ListItem>
+                {answer.whenWeMeet.map((_, index) => (
+                  <>
+                    <ListItem>
+                      <Box>
+                        <Text as={"span"} fontWeight={"bold"}>
+                          모이는 날짜:
+                        </Text>{" "}
+                        {answer.whenWeMeet[index]}
+                      </Box>
+                      <Box>
+                        <Text as={"span"} fontWeight={"bold"}>
+                          모이는 장소:
+                        </Text>{" "}
+                        {answer.whereWeMeet[index]}
+                      </Box>
+                    </ListItem>
+                  </>
+                ))}
               </List>
             </Box>
             <Box>
@@ -110,18 +123,9 @@ const Result = () => {
               </Text>
 
               <List spacing={2}>
-                <ListItem>
-                  <Text as={"span"} fontWeight={"bold"}>
-                    디자인
-                  </Text>{" "}
-                  Ai, photoshop 등...
-                </ListItem>
-                <ListItem>
-                  <Text as={"span"} fontWeight={"bold"}>
-                    문서작업
-                  </Text>{" "}
-                  한글, 엑셀등 능력 우대
-                </ListItem>
+                {answer.whatWeWant.map((value) => (
+                  <ListItem as="li">{value}</ListItem>
+                ))}
               </List>
             </Box>
             <Box>
@@ -140,12 +144,12 @@ const Result = () => {
                   <Text as={"span"} fontWeight={"bold"}>
                     국장 연락처
                   </Text>{" "}
-                  010-1234-5678
+                  {answer.tel}
                 </ListItem>
               </List>
             </Box>
             <Text as={"span"} fontWeight={"bold"} fontSize={{ base: "2xl" }}>
-              하나님이 주시는 섬김의 마음만 있다면 누구든 함께할 수 있어요!
+              {answer.lastWord}
             </Text>
           </Stack>
 
