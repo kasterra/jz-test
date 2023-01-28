@@ -3,17 +3,22 @@ import styled from "styled-components";
 import questionList from "../question";
 import { Button, Heading } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
+import { getMostAccordantIndex, pluckFromArray } from "../util";
+import { answers } from "../answers";
 
 const Questions = () => {
   const [curPage, setCurPage] = useState(0);
   const [answerList, setAnswerList] = useState<number[]>([]);
   const navigate = useNavigate();
-  console.log(answerList);
   useEffect(() => {
     if (curPage === 7) {
-      navigate("/result");
+      const mostAccordantIndex = getMostAccordantIndex(
+        answerList,
+        pluckFromArray(answers, "answersList")
+      );
+      navigate(`/result?idx=${mostAccordantIndex}`);
     }
-  }, [curPage, navigate]);
+  }, [curPage, navigate, answerList]);
   return (
     <Slider>
       <Slides curPage={curPage}>

@@ -29,7 +29,7 @@ export const answers: answerType[] = [
   },
   {
     name: "하인워십",
-    answersList: [0, 1, 0, 0, 1, 0],
+    answersList: [0, 1, 0, 0, 1, 0, 1],
     whatWeDo: ["야베스의 모든 찬양"],
     whenWeMeet: [
       "매주 금요일 오후 6시 (7층 제자홀)",
