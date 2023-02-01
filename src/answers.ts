@@ -8,6 +8,7 @@ type answerType = {
   tel: string;
   imageURL?: string;
   lastWord: string;
+  oneLine: string;
 };
 
 export const answers: answerType[] = [
@@ -28,6 +29,7 @@ export const answers: answerType[] = [
     ],
     tel: "010-8954-4854",
     lastWord: "하나님이 주시는 섬김의 마음만 있다면 누구든 함께할 수 있어요",
+    oneLine: "야베스의 디자인 연구소",
   },
   {
     name: "하인워십",
@@ -51,6 +53,7 @@ export const answers: answerType[] = [
     lastWord:
       "청년의 때에 하나님의 부르심의 은혜를 기억하며 후회없이 끝장나게 사역할 야베스가 있다면 하인워십으로!!!",
     imageURL: "https://i.postimg.cc/NFYTPBV8/hain.png",
+    oneLine: "야베스의 모든 찬양",
   },
   {
     name: "새가족국",
@@ -66,6 +69,7 @@ export const answers: answerType[] = [
     whatWeWant: ["적당한 텐션", "나름의 재치", "웃는 얼굴"],
     tel: "010-2542-3717",
     lastWord: "저희와 함께 새가족을 섬길분을 진심으로 기다립니다🤗",
+    oneLine: "야베스의 디자인 연구소",
   },
   {
     name: "전도국",
@@ -78,6 +82,7 @@ export const answers: answerType[] = [
     lastWord:
       "지금 이 순간, 주님의 일하심과 값 없는 사랑을 경험하셨다면 누구든지 함께할 수 있어요!",
     imageURL: "https://i.postimg.cc/ydpnMJmh/evan.jpg",
+    oneLine: "야베스의 디자인 연구소",
   },
   {
     name: "영상국",
@@ -96,5 +101,6 @@ export const answers: answerType[] = [
     tel: "010-5498-3962",
     lastWord: "하나님이 주시는 섬김의 마음만 있다면 누구든 함께할 수 있어요",
     imageURL: "https://i.postimg.cc/RZ1dMp1Z/video.jpg",
+    oneLine: "야베스의 디자인 연구소",
   },
 ];

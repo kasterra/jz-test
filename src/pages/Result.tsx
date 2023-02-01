@@ -14,12 +14,13 @@ import {
   List,
   ListItem,
 } from "@chakra-ui/react";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { answers } from "../answers";
 
 const Result = () => {
   const [idx] = useSearchParams();
   const answer = answers[Number(idx.get("idx")) || 0];
+  const navigate = useNavigate();
   return (
     <Container maxW={"7xl"}>
       <SimpleGrid
@@ -166,6 +167,7 @@ const Result = () => {
               transform: "translateY(2px)",
               boxShadow: "lg",
             }}
+            onClick={() => navigate("#")}
           >
             사역국 지원하러 가기
           </Button>
@@ -182,6 +184,7 @@ const Result = () => {
               transform: "translateY(2px)",
               boxShadow: "lg",
             }}
+            onClick={() => navigate("/results")}
           >
             다른 국에 대해서도 알아보기
           </Button>

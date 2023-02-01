@@ -6,6 +6,7 @@ import {
 import Welcome from "./Welcome";
 import Questions from "./Questions";
 import Result from "./Result";
+import Results from "./Results";
 
 const Routes = () => {
   return (
@@ -14,6 +15,7 @@ const Routes = () => {
         <Route path="/" element={<Welcome />} />
         <Route path="/questions" element={<Questions />} />
         <Route path="/result" element={<Result />} />
+        <Route path="/results" element={<Results />} />
       </ReactRouterRoutes>
     </Router>
   );
