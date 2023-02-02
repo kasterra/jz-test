@@ -103,4 +103,15 @@ export const answers: answerType[] = [
     imageURL: "https://i.postimg.cc/RZ1dMp1Z/video.jpg",
     oneLine: "야베스의 디자인 연구소",
   },
+  {
+    name:'선교국',
+    answersList:[0,1,0,1,1,0,0],
+    whatWeDo:["IMPACT JAPAN 사역 및 국내 선교사역 support","일본 언어/문화 Study"],
+    whenWeMeet:['매주 토요일 2시 ~ 2시반 부터 4시반까지'],
+    whereWeMeet:['교육관 1층(장소 매주 변동)'],
+    whatWeWant:['일본어 회화/일본어 번역','문서 작업 및 정리', 'MBTI J 유형'],
+    tel:'010-9284-9008',
+    lastWord:'선교에대한 마음과 공동체를 위해 헌신할 마음이있다면 누구나 함께 할수 있습니다..!',
+    oneLine:'야베스의 디자인 연구소'
+  }
 ];
