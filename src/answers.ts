@@ -17,11 +17,11 @@ export const answers: answerType[] = [
     answersList: [0, 0, 0, 1, 1, 1, 0],
     whatWeDo: [
       "주보 디자인 및 인쇄",
-      "수련회 책자작업",
+      "수련회 책자 작업",
       "각종 행사 포스터 디자인",
-      "매주 예배광고 PPT",
+      "매주 예배 광고 PPT",
     ],
-    whenWeMeet: ["매주 토요일 오후 2시"],
+    whenWeMeet: ["매주 토요일 오후 2~4시"],
     whereWeMeet: ["교육관 401호"],
     whatWeWant: [
       "디자인 : Ai, Photoshop 등...",
@@ -32,7 +32,7 @@ export const answers: answerType[] = [
     oneLine: "야베스의 디자인 연구소",
   },
   {
-    name: "하인워십",
+    name: "찬양국(하인워십)",
     answersList: [0, 1, 0, 0, 1, 0, 1],
     whatWeDo: ["야베스의 모든 찬양"],
     whenWeMeet: [
@@ -51,7 +51,7 @@ export const answers: answerType[] = [
     ],
     tel: "010-3248-7123",
     lastWord:
-      "청년의 때에 하나님의 부르심의 은혜를 기억하며 후회없이 끝장나게 사역할 야베스가 있다면 하인워십으로!!!",
+      "청년의 때에 하나님의 부르심의 은혜를 기억하며 후회 없이 끝장나게 사역할 야베스가 있다면 하인워십으로!!!",
     imageURL: "https://i.postimg.cc/NFYTPBV8/hain.png",
     oneLine: "야베스의 모든 찬양",
   },
@@ -59,10 +59,10 @@ export const answers: answerType[] = [
     name: "새가족국",
     answersList: [1, 0, 0, 0, 0, 1, 1],
     whatWeDo: [
-      "(새) 가족을 반길 수 있어요☺️",
-      "(가) 까이서 복음을 전해요📢",
-      "(조)금 에너지가 필요해요🔋",
-      "(국) 원끼리 사랑이 넘쳐요💓",
+      "[새] 가족을 반길 수 있어요☺️",
+      "[가] 까이서 복음을 전해요📢",
+      "[조]금 에너지가 필요해요🔋",
+      "[국] 원끼리 사랑이 넘쳐요💓",
     ],
     whenWeMeet: ["매주 토요일 오후 2시"],
     whereWeMeet: ["교육관 117호"],
@@ -104,14 +104,18 @@ export const answers: answerType[] = [
     oneLine: "야베스의 디자인 연구소",
   },
   {
-    name:'선교국',
-    answersList:[0,1,0,1,1,0,0],
-    whatWeDo:["IMPACT JAPAN 사역 및 국내 선교사역 support","일본 언어/문화 Study"],
-    whenWeMeet:['매주 토요일 2시 ~ 2시반 부터 4시반까지'],
-    whereWeMeet:['교육관 1층(장소 매주 변동)'],
-    whatWeWant:['일본어 회화/일본어 번역','문서 작업 및 정리', 'MBTI J 유형'],
-    tel:'010-9284-9008',
-    lastWord:'선교에대한 마음과 공동체를 위해 헌신할 마음이있다면 누구나 함께 할수 있습니다..!',
-    oneLine:'야베스의 디자인 연구소'
-  }
+    name: "선교국",
+    answersList: [0, 1, 0, 1, 1, 0, 0],
+    whatWeDo: [
+      "IMPACT JAPAN 사역 및 국내 선교사역 support",
+      "일본 언어/문화 Study",
+    ],
+    whenWeMeet: ["매주 토요일 2시 ~ 2시반 부터 4시반까지"],
+    whereWeMeet: ["교육관 1층(장소 매주 변동)"],
+    whatWeWant: ["일본어 회화/일본어 번역", "문서 작업 및 정리", "꼼꼼한 성격"],
+    tel: "010-9284-9008",
+    lastWord:
+      "선교에대한 마음과 공동체를 위해 헌신할 마음이있다면 누구나 함께 할수 있습니다..!",
+    oneLine: "야베스의 디자인 연구소",
+  },
 ];
