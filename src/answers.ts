@@ -30,6 +30,7 @@ export const answers: answerType[] = [
     tel: "010-8954-4854",
     lastWord: "하나님이 주시는 섬김의 마음만 있다면 누구든 함께할 수 있어요",
     oneLine: "야베스의 디자인 연구소",
+    imageURL: "https://i.postimg.cc/k4qTDFtY/pres.jpg",
   },
   {
     name: "찬양국(하인워십)",
@@ -119,5 +120,6 @@ export const answers: answerType[] = [
     lastWord:
       "선교에 대한 마음과 공동체를 위해 헌신할 마음이 있다면 누구나 함께할 수 있습니다!",
     oneLine: "야베스의 디자인 연구소",
+    imageURL: "https://i.postimg.cc/W3HHdqmB/mission.jpg",
   },
 ];
