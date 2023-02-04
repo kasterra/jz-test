@@ -51,7 +51,7 @@ export const answers: answerType[] = [
     ],
     tel: "010-3248-7123",
     lastWord:
-      "청년의 때에 하나님의 부르심의 은혜를 기억하며 후회 없이 끝장나게 사역할 야베스가 있다면 하인워십으로!!!",
+      "청년의 때에 하나님의 부르심의 은혜를 기억하며 후회없이 끝장나게 사역할 야베스가 있다면 하인워십으로!!!",
     imageURL: "https://i.postimg.cc/NFYTPBV8/hain.png",
     oneLine: "야베스의 모든 찬양",
   },
@@ -68,7 +68,7 @@ export const answers: answerType[] = [
     whereWeMeet: ["교육관 117호"],
     whatWeWant: ["적당한 텐션", "나름의 재치", "웃는 얼굴"],
     tel: "010-2542-3717",
-    lastWord: "저희와 함께 새가족을 섬길분을 진심으로 기다립니다🤗",
+    lastWord: "저희와 함께 새가족을 섬길 분을 진심으로 기다립니다🤗",
     oneLine: "야베스의 디자인 연구소",
   },
   {
@@ -76,11 +76,11 @@ export const answers: answerType[] = [
     answersList: [1, 1, 0, 1, 1, 0, 1],
     whatWeDo: ["거리전도", "노방찬양", "아파트 전단지 전도", "취약 계층 도움"],
     whenWeMeet: ["매주 목요일 오후 6시 30분"],
-    whereWeMeet: ["교육관 108호 (장소는 때에따라 변경될 수 있습니다)"],
+    whereWeMeet: ["교육관 108호 (장소는 때에 따라 변경될 수 있습니다)"],
     whatWeWant: ["기타 반주"],
     tel: "010-2661-1913",
     lastWord:
-      "지금 이 순간, 주님의 일하심과 값 없는 사랑을 경험하셨다면 누구든지 함께할 수 있어요!",
+      "지금 이 순간, 주님의 일하심과 값없는 사랑을 경험하셨다면 누구든지 함께할 수 있어요!",
     imageURL: "https://i.postimg.cc/ydpnMJmh/evan.jpg",
     oneLine: "야베스의 디자인 연구소",
   },
@@ -115,7 +115,7 @@ export const answers: answerType[] = [
     whatWeWant: ["일본어 회화/일본어 번역", "문서 작업 및 정리", "꼼꼼한 성격"],
     tel: "010-9284-9008",
     lastWord:
-      "선교에대한 마음과 공동체를 위해 헌신할 마음이있다면 누구나 함께 할수 있습니다..!",
+      "선교에 대한 마음과 공동체를 위해 헌신할 마음이 있다면 누구나 함께할 수 있습니다!",
     oneLine: "야베스의 디자인 연구소",
   },
 ];
