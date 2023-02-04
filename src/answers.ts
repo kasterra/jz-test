@@ -29,7 +29,7 @@ export const answers: answerType[] = [
     ],
     tel: "010-8954-4854",
     lastWord: "하나님이 주시는 섬김의 마음만 있다면 누구든 함께할 수 있어요",
-    oneLine: "야베스의 디자인 연구소",
+    oneLine: "고급 디자인 사무소",
     imageURL: "https://i.postimg.cc/k4qTDFtY/pres.jpg",
   },
   {
@@ -72,7 +72,7 @@ export const answers: answerType[] = [
     lastWord: "저희와 함께 새가족을 섬길 분을 진심으로 기다립니다🤗",
     imageURL:
       "https://i.postimg.cc/qvnMRmjc/Kakao-Talk-20230204-155758979-01.jpg",
-    oneLine: "야베스의 얼굴",
+    oneLine: "오세요 야베스로",
   },
   {
     name: "전도국",
@@ -85,7 +85,7 @@ export const answers: answerType[] = [
     lastWord:
       "지금 이 순간, 주님의 일하심과 값없는 사랑을 경험하셨다면 누구든지 함께할 수 있어요!",
     imageURL: "https://i.postimg.cc/ydpnMJmh/evan.jpg",
-    oneLine: "야베스의 디자인 연구소",
+    oneLine: "야베스의 복음 쿠팡맨",
   },
   {
     name: "영상국",
@@ -104,7 +104,7 @@ export const answers: answerType[] = [
     tel: "010-5498-3962",
     lastWord: "하나님이 주시는 섬김의 마음만 있다면 누구든 함께할 수 있어요",
     imageURL: "https://i.postimg.cc/RZ1dMp1Z/video.jpg",
-    oneLine: "야베스의 디자인 연구소",
+    oneLine: "야베스는 현재 ON AIR입니다",
   },
   {
     name: "선교국",
@@ -119,7 +119,7 @@ export const answers: answerType[] = [
     tel: "010-9284-9008",
     lastWord:
       "선교에 대한 마음과 공동체를 위해 헌신할 마음이 있다면 누구나 함께할 수 있습니다!",
-    oneLine: "야베스의 디자인 연구소",
+    oneLine: "당신이 선교사입니다",
     imageURL: "https://i.postimg.cc/W3HHdqmB/mission.jpg",
   },
 ];
