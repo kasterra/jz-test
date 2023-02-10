@@ -137,7 +137,7 @@ const Result = () => {
                 textTransform={"uppercase"}
                 mb={"4"}
               >
-                지원시 참고사항
+                지원 시 참고사항
               </Text>
 
               <List spacing={2}>

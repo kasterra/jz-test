@@ -8,7 +8,7 @@ import {
   Text,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Results = () => {
   const navigate = useNavigate();
@@ -55,9 +55,9 @@ const ResultComponent = ({ idx }: Props) => {
           {answers[idx].name}
         </Heading>
       </Stack>
-      <a href={`/result?idx=${idx}`}>
+      <Link to={`/result?idx=${idx}`}>
         <Button colorScheme="teal">자세히 보기</Button>
-      </a>
+      </Link>
     </Flex>
   );
 };
