@@ -1,10 +1,15 @@
+function pickOneRandomly<T>(arg1: T, arg2: T) {
+  console.log("pickOneRandomly", arg1, arg2);
+  return Math.random() < 0.5 ? arg1 : arg2;
+}
+
 function maxValueReducer<T>(
   maxIndex: number,
   curValue: T,
   idx: number,
   arr: T[]
 ) {
-  return curValue > arr[maxIndex] ? idx : maxIndex;
+  return curValue > arr[maxIndex] ? pickOneRandomly(idx, maxIndex) : maxIndex;
 }
 
 function getMatchNumber<T>(arr1: T[], arr2: T[]): number {
