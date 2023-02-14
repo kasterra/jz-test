@@ -167,7 +167,7 @@ const Result = () => {
               transform: "translateY(2px)",
               boxShadow: "lg",
             }}
-            onClick={() => window.location.replace("https://naver.com")}
+            onClick={() => window.location.replace("https://naver.me/xpadbMo4")}
           >
             사역국 지원하러 가기
           </Button>
